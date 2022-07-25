@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>REGISTRATION </title>
+  </head>
+
+  <body background="back1.png">
+    <form onsubmit="return validate()  action="regCheck.php" method="post" enctype="">
+      <fieldset align="center">
+        <legend>Registration</legend>
+        <table align="center">
+          <tr>
+            <td>Username</td>
+            <td>
+              <input type="text" name="username" value="" id="username" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>E-mail</td>
+            <td><input type="email" name="email" value="" id="email" /></td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="password" name="password" value="" id="password" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Phone No</td>
+            <td>
+              <input type="tel" name="Phnno" value="" id="tel" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <select name="" id="gender">
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Address</td>
+            <td>
+              <textarea name="address" id="address" cols="21" rows="5"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><hr /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" />
+              <a href="login.html" class="">Login</a>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <script>
+      function validate(){
+          
+          let username = document.getElementById('username').value;
+          if(username != ""){
+              return true;
+          }
+          else{
+              alert('null username')
+              return false;
+          }
+          let email = document.getElementById('email').value;
+          if(email != ""){
+              return true;
+          }
+          else{
+              alert('null email')
+              return false;
+          }
+          let password = document.getElementById('password').value;
+          if(password != ""){
+              return true;
+          }
+          else{
+              alert('null password')
+              return false;
+          }
+
+      }
+  </script>
+  </body>
+</html>
+
