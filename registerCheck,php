@@ -1,0 +1,9 @@
+<?php 
+
+    $json = $_POST['data'];
+  
+    $user = json_decode($json);
+  
+    echo $user->username;
+
+?>
